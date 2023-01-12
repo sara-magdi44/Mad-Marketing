@@ -2,6 +2,10 @@
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
+.img-follow>img{
+    object-fit: cover;
+}
+
 .navbar-toggler{
     border:none;
     box-shadow: none;
