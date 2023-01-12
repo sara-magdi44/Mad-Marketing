@@ -493,6 +493,7 @@ transform: translateX(5px);
 .item{
     display: flex;
     justify-content: center;
+    padding: 50px;
 }
 #item-img1,
 #item-img2,
@@ -503,8 +504,18 @@ transform: translateX(5px);
 #item-img7
 {
     width: 200px;
+    transition: ease-in-out 0.2s;
 }
-
+.item:hover #item-img1,
+.item:hover #item-img2,
+.item:hover #item-img3,
+.item:hover #item-img4,
+.item:hover #item-img5,
+.item:hover #item-img6,
+.item:hover #item-img7
+{
+ transform: scale(1.2);
+}
 /* follow */
 .follow{
     background: #DFDFF2;
