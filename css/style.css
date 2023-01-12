@@ -423,7 +423,7 @@ transform: translateX(5px);
     padding-bottom: 60px;
 }
 .customer-row{
-    padding: 30px 0;
+    padding: 30px;
     justify-content: end;
     gap: 35px;
 }
