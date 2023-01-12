@@ -2,9 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
-.img-follow>img{
-    object-fit: cover;
-}
+
 
 .navbar-toggler{
     border:none;
@@ -493,7 +491,8 @@ transform: translateX(5px);
 .item{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #item-img1,
 #item-img2,
