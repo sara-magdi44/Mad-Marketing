@@ -6,16 +6,24 @@
     border:none;
     box-shadow: none;
 }
-
-.left-bar #navpage:hover{
-    color: aqua;
-    transform: rotate(120deg);
-    transition: ease-in-out 0.5s;
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 500;
 }
+
+@media only screen and (max-width: 900px) {
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 500;
+    }
+}
+
+
+
 /* hero */
 #hero{
     width: 100%;
-    height: 94vh;
+    height: 91vh;
     background-color:linear ;
     flex-direction: column;
     justify-content: end;
@@ -48,13 +56,16 @@
 /* hero media */
 @media only screen and (max-width: 600px) {
     #hero{
-        height: 75vh;
+        height: 60vh;
         padding-bottom:45px;
     }
     #hero .row img{
-        width: 300px;
+        width: 350px;
     }
 }
+
+
+
 /* about us */
 .aboutus{
     width: 100%;
@@ -91,7 +102,7 @@ padding: 30px 0 23px 0 ;
     width: 270px;
 }
 .card{
-    width: 130px;
+    width: 120px;
     height: 130px;
     border: 1px solid #70707077;
     border-radius: 10px;
@@ -164,21 +175,24 @@ padding: 30px 0 23px 0 ;
         width: 170px;
     }
     .aboutusinfo h1{
+        font-size: 25px;
+        line-height: 40px;
         letter-spacing: 0;
     }
     .aboutusinfo p{
         font-size: 18px;
     }
     .card{
-        width: 95px;
-        height: 95px;
+        width: 76px;
+        height: 76px;
     }
     .card-info h5{
-        font-size: 15px;
+        font-size: 12px;
         justify-content: center;
     }
     .card-icon img{
-        padding-bottom: 10px;
+        padding: 10px 0 ;
+        width: 22px;
     }
     .divbutton{
         display: flex;
@@ -202,7 +216,7 @@ padding: 30px 0 23px 0 ;
 
 /*  */
 .reasontitle , .service-title ,
-.customer-title , .partner-title{
+.customer-title {
     padding:60px 0;
     text-align: center;
     text-transform: capitalize;
@@ -268,6 +282,7 @@ transition: 0.3s ease-out;
 .icon-title h2{
     font-weight: 600;
     font-size: 20px;
+    text-transform: capitalize;
     transition: 0.3s ease-out;
 
 }
@@ -300,7 +315,7 @@ transform: translateX(5px);
     justify-content: space-around;
     align-items: center;
     transition: all .5s cubic-bezier(.6,.4,0,1);   
-     position: relative;
+    position: relative;
 
 }
 .card-service-disable{
@@ -321,6 +336,7 @@ transform: translateX(5px);
 }
 .disabeltitle h5{
     font-size: 18px;
+    font-weight: bold;
 }
 .disabeltitle p{
     font-size: 12px;
@@ -330,9 +346,10 @@ transform: translateX(5px);
 .services-title h5{
     font-size: 20px;
     text-transform: capitalize;
+    font-weight: bold;
 }
 
-.service-hidden{
+.service-hidden {
     position: absolute;
     display: flex;
     border-radius: 10px;
@@ -341,6 +358,7 @@ transform: translateX(5px);
     background-color: #3C0080;
     box-shadow: 0 10px 29px 0 rgba(57, 74, 122, 0.1);
     height: 250px;
+    width: 100%;
     text-align: left;
     padding: 0px 57px 0 21px;
     font-size: 20px;
@@ -352,11 +370,13 @@ transform: translateX(5px);
     align-content: center;
 
 }
+
 .service-hidden-p{
      font-size: 12px;
 }
 
 .service-hidden-header{
+    font-weight: bold;
     font-size: 18px;
     transition: .3s cubic-bezier(.6,.4,0,1);
     transform: translateY(50px) translateX(50px);
@@ -410,7 +430,7 @@ transform: translateX(5px);
 .customer-col{
     margin-bottom: 30px;
 }
-s
+/*counter*/
 .counter-info p  {
     text-align: left;
     font-size: 25px;
@@ -443,10 +463,38 @@ s
 #counter3::after{
     background-color: #EFEADB;
 }
+/*counter media*/
+@media only screen and (max-width: 600px) {
+    .counter-info p  {
+        text-align: left;
+        font-size: 25px;
+    }
+    .counter-data{
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .counter::after{
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 200px;
+        z-index: -1;
+        border-radius: 50%;
+        bottom: -75px;
+        left: -53px;
+    }
+}
+
 /* partners */
 .partner-container{
     margin: 0;
     max-width: 100%;
+}
+.partner-title{
+    padding: 30px 0;
+    text-align: center;
+    text-transform: capitalize;
 }
 .owl-carousel{
    height:  327px;
