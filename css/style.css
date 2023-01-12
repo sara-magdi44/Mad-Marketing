@@ -518,6 +518,10 @@ transform: translateX(5px);
     text-align: left;
     justify-content: space-evenly;
 }
+.ios-strech-fix
+{
+      height: intrinsic;
+}
 #title1{
     font-size: 60px;
 }
