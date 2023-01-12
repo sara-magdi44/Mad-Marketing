@@ -21,23 +21,28 @@ console.log(counters);
 });
 */
 
-/* owl carousel */
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:7,
+// owl carousel 
+$('.owl-carousel').owlCarousel({
     loop:true,
+    margin:10,
+    navText: [" ", " "],
     autoplay:true,
     autoplayTimeout:3000,
-    autoplayHoverPause:true
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[1000])
-})
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})
-        
-/*  counter when scroll */ 
+    autoplayHoverPause:true,
+    responsive:{
+        0:{ 
+            items:2 
+        },
+        600:{ 
+            items:3 
+        },
+        1000:{ 
+            items:5 
+        }
+    }
+});   
+
+// counter when scroll  
 $(document).ready(function () {
     $(document).scroll(function() {
         if($(".customer").visible(true)) {
@@ -57,6 +62,7 @@ $(document).ready(function () {
             $(document).unbind("scroll");
         }
     });
+
     // if we want to hover but scroll is way better
 // $(".customer").hover(function () {
 
