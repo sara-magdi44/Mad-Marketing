@@ -691,4 +691,15 @@ padding: 5px 0;
 #copywrite1>span{
 color: #707070;
 }
-
+/* our-journey */
+.our-journey{
+    text-align: center;   
+    text-transform: capitalize; 
+}
+.joureny-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.joureny-title span{
+    color: #4A009E;
+}
