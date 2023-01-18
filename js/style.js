@@ -63,10 +63,10 @@ $(document).ready(function () {
         }
     });
  
- 
- 
+
 $(document).ready(function(){
     $(document).scroll(function() {
+        if($(".customer").visible(true)) {
     var events = [
         {
             date: 'UAE',
@@ -91,7 +91,9 @@ $(document).ready(function(){
             console.log('onBuild event')
         }
         });
-        
+        $(document).unbind("scroll");
+
+    }
     });
 });
 
