@@ -62,6 +62,38 @@ $(document).ready(function () {
             $(document).unbind("scroll");
         }
     });
+ 
+ 
+ 
+$(document).ready(function(){
+    $(document).scroll(function() {
+    var events = [
+        {
+            date: 'UAE',
+            content: 'Since 2010'
+        },
+        {
+            date: 'Riyadh',
+            content: 'Since 2010'
+        },
+        {
+            date: 'Kuwait',
+            content: 'Since 2010'
+        },
+         ];
+
+    $('#my-roadmap').roadmap(events, {
+        eventsPerSlide: 3,
+        slide: 1,
+        prevArrow: '<i class="material-icons">keyboard_arrow_left</i>',
+        nextArrow: '<i class="material-icons">keyboard_arrow_right</i>',
+        onBuild: function() {
+            console.log('onBuild event')
+        }
+        });
+        
+    });
+});
 
     // if we want to hover but scroll is way better
 // $(".customer").hover(function () {
