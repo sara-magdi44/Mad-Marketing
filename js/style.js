@@ -66,8 +66,8 @@ $(document).ready(function () {
 
 $(document).ready(function(){
     $(document).scroll(function() {
-        if($(".customer").visible(true)) {
-    var events = [
+        if($(".our-journey").visible(true)) {
+          var events = [
         {
             date: 'UAE',
             content: 'Since 2010'
